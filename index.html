@@ -1,0 +1,245 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graduation Webgift</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inspiration&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Julius+Sans+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Julius+Sans+One&display=swap" rel="stylesheet">
+
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    
+
+</head>
+
+
+<style media="screen">
+    .cert{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, .5);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+}
+
+#certificate{
+    position: relative;
+    width: 900px;
+    height: 550px;
+    background: url(images/certificate\ border.png) white 100% / cover no-repeat;
+    color: black;
+    font-family: "IBM Plex Serif";
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.certificate img{
+    height: 200px;
+    position: relative;
+    left: 30%;
+    top: 20px;
+}
+
+h3{
+    margin-top: -4em;
+    font-size: 2em;
+    letter-spacing: 5px;
+    margin-bottom: 2em;
+}
+
+h3 span{
+    font-size: .5em;
+    letter-spacing: 1px;
+}
+
+h3>span::before{
+    content: "";
+    width: 50px;
+    height: 1px;
+    position: absolute;
+    background-color: black;
+    z-index: 4;
+    margin-left: -3.8em;
+}
+
+h3>span::after{
+    content: "";
+    width: 50px;
+    height: 1px;
+    position: absolute;
+    background-color: black;
+    z-index: 4;
+    margin-top: .7em;
+    margin-left: .5em;
+}
+
+input{
+    border: none;
+    border-bottom: 1px solid black;
+    text-align: center;
+    font-family: "IBM Plex Serif";
+}
+
+.name{
+    width: 450px;
+    height: 70px;
+    font-size: 3em;
+    font-family: Tangerine;
+    margin-bottom: .4em;
+}
+
+.cert_txt p{
+    margin: 0;
+}
+
+.signature{
+    position: absolute;
+    margin-top: -.4em;
+    margin-left: 5em;
+}
+.sign{
+    border-bottom: 1px solid black;
+    width: 140px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sign img{
+    height: 120px;
+    margin-left: -4em;
+    margin-bottom: 1.5em;
+}
+
+.signature p{
+    margin: 0;
+}
+</style>
+
+
+<body>
+    <div class="container">
+        <div class="hero_vid">
+            <img class="logo" src="images/webgifter logo.svg" alt="Made by WebGifter">
+            <div>
+                <video autoplay loop muted>
+                    <source src="images/graduation video.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <div class="hero">
+                    <img src="images/CU logo.png" alt="Covenant University Logo">
+                    <h1>You made it!</h1>
+                    <p>Congratulations on being part of the <span>19th</span> graduating set of <br>Covenant University</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="green"></div>
+
+        <div class="body">
+            <div class="body_bg"></div>
+            <div class="content">
+                <div class="text">
+                    <h2>Make way for the newest 
+                        <div class="eagle_wings">
+                            <img src="images/eagle wing doodle.svg" alt="wing">
+                            <span class="eagle">Eagle</span>
+                            <img class="r_wing" src="images/eagle wing doodle.svg" alt="wing">
+                        </div>
+                        in town</h2>
+                    <p>Your hard work and dedication have paid off, and this is a remarkable achievement! Completing this chapter is no small feat, and it sets the foundation for even greater accomplishments ahead.</p>
+                    <p>Wishing you continued success as you step into the next phase of your journey. Here's to new opportunities and endless possibilities!</p>
+                    
+                </div>
+                <div class="get_cert">
+                    <p>Get your certificate</p>
+                    <img class="arrow" src="images/arrow doodle.svg" alt="arrow">
+                    <img class="cert_hand" src="images/handing certificate.png" alt="certificate">                    
+                </div>
+            </div>
+
+            <div class="cert">
+                <div class="certificate" id="certificate">
+                    <img src="images/badge.png" alt="gold badge">
+                    <h3>CERTIFICATE<br><span>OF GRADUATION</span></h3>
+                    <input class="name" type="text">
+                    <div class="cert_txt">
+                        <p>This is to certify that the holder of this</p>
+                        <p>certificate has successfully completed <input type="text"></p>
+                        <p>with commendable dedication and effort. In recognition of this outstanding</p>
+                        <p>accomplishment, we proudly present this certificate.</p>
+                    </div>
+    
+                    <div class="signature">
+                        <div class="sign">
+                            Click
+                        </div>
+                        <p>Signature</p>
+                    </div>
+                </div>
+                <a id="download" href="#">Download certificate</a>
+            </div>
+        </div>
+
+        
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var element = document.getElementById("certificate");
+    
+            $("#download").on('click', function(e){
+                e.preventDefault(); // Prevent default link behavior
+    
+                // Use html2canvas to capture the certificate
+                html2canvas(element, {
+                    useCORS: true // Allows cross-origin images to be captured
+                }).then(function(canvas) {
+                    // Convert the canvas to an image
+                    var imageData = canvas.toDataURL("image/jpeg", 1.0); // Set the image quality
+    
+                    // Create a temporary link element to trigger the download
+                    var link = document.createElement('a');
+                    link.href = imageData; // Set the href to the image data
+                    link.download = "certificate.jpg"; // Set the download attribute
+    
+                    // Trigger the download
+                    link.click();
+                }).catch(function(error) {
+                    console.error("Error capturing the certificate: ", error);
+                });
+            });
+        });
+    </script>
+    
+</body>
+</html>

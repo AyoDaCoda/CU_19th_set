@@ -1,0 +1,245 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #3A223E;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.hero_vid{
+    height: 100%;
+    width: 100%;
+}
+
+.logo{
+    position: fixed;
+    margin: 1.5em 0 0 1.5em;
+    height: 1.1em;
+    z-index: 99;
+}
+
+video{
+    padding: 0;
+    height: 102%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 15%;
+    width: 100%;
+}
+
+.hero img{
+    height: 6em;
+    margin-bottom: 1em;
+}
+
+h1{
+    font-family: "Inspiration", cursive;
+    font-size: 4em;
+    font-weight: 400;
+    margin: 0;
+}
+
+.hero p{
+    text-align: center;
+    line-height: 23px;
+    z-index: 0;
+    font-size: 20px;
+}
+
+span::before{
+    content: "";
+    width: 29px;
+    height: 10px;
+    background-color: #5BBA4E;
+    position: absolute;
+    margin-top: 10px;
+    z-index: -1;
+}
+
+.green{
+    height: 100%;
+    width: 100%;
+    background-color: #5BBA4E;
+    transition: bottom 0.5s ease-in-out; /* Smooth animation */
+    position: fixed;
+    bottom: -100vh;
+}
+
+.body{
+    height: 100%;
+    width: 100%;
+    background-color: #3a223e;
+    transition: bottom 0.5s ease-in-out; /* Smooth animation */
+    position: fixed;
+    bottom: -100vh;
+}
+
+.body_bg{
+    background: url(images/graduation\ doodle.png) #3a223e 0% 0% / 600px 600px repeat;
+    width: 100%;
+    height: 100%;
+    background-blend-mode: soft-light;
+    opacity: .5;
+    position: absolute;
+    z-index: -1;
+}
+
+.content{
+    display: flex;
+    gap: 10em;
+}
+
+h2{
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 400;
+    font-size: 3em;
+    text-align: justify;
+}
+
+.eagle::before{
+    width: 133px;
+    height: 15px;
+    background-color: #5BBA4E;
+    position: absolute;
+    margin-top: 33px;
+    z-index: -1;
+}
+
+.text{
+    margin-left: 10em;
+    margin-top: 7em;
+    max-width: 600px;
+}
+
+.text p{
+    line-height: 25px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.get_cert{
+    margin-top: 7em;
+}
+
+.get_cert p{
+    position: relative;
+    top: 22%;
+    margin-left: 12em;
+}
+
+.arrow{
+    position: relative;
+    top: 17%;
+    margin-left: 2em;
+    height: 160px;
+}
+
+/* transform-style: preserve 3d; */
+
+@keyframes swing {
+    0%{
+        transform: rotate(3deg);
+    }
+
+    50%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(3deg);
+    }
+}
+
+.cert_hand{
+    height: 400px;
+    position: relative;
+    bottom: 4%;
+    animation: swing 1s ease-in-out infinite;
+    cursor: pointer;
+}
+
+.eagle_wings{
+    display: flex;
+    gap: .1em;
+    width: fit-content;
+}
+
+.eagle_wings img{
+    height: 50px;
+}
+
+.r_wing{
+    transform: scaleX(-1);
+}
+
+a{
+    margin-top: 1em;
+    color: white;
+}
+
+@media only screen and (max-width: 1199px){
+    .content{
+        gap: 5em;
+    }
+    .cert_hand{
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 1079px){
+    .hero p{
+        width: 400px;
+    }
+
+    h2{
+        text-align: left;
+    }
+
+    .body{
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .body_bg{
+        height: 130%;
+    }
+
+    .cert{
+        visibility: hidden;
+        width: 10px;
+        overflow: hidden;
+        height: 200px;
+    }
+    .text{
+        margin-left: 3em;
+    }
+    .get_cert{
+        visibility: hidden;
+        width: 140px;
+    }
+    .content{
+        gap: 1em;
+    }
+
+    .eagle_wings{
+        top: 43%;
+        left: 3%;
+    }
+
+    .eagle_wings img{
+        height: 45px;
+    }
+    .eagle::before{
+        left: 90px;
+    }
+}
+
